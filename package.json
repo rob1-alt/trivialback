@@ -1,0 +1,30 @@
+{
+  "name": "trivialbackend",
+  "version": "1.0.0",
+  "description": "trivial is the service that helps you control what you eat",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rob1-alt/trivialback.git"
+  },
+  "keywords": [
+    "trivial",
+    "node",
+    "express"
+  ],
+  "author": "Rob1",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rob1-alt/trivialback/issues"
+  },
+  "homepage": "https://github.com/rob1-alt/trivialback#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.17.0"
+  }
+}
