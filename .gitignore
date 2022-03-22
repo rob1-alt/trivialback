@@ -1,1 +1,3 @@
 /config
+.env
+._mysql_data_dir
