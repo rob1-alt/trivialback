@@ -1,18 +1,18 @@
-const Sequelize = require("sequelize");
+// const Sequelize = require("sequelize");
 
-const sequelize = require("../util/bdd");
+// const sequelize = require("../util/bdd");
 
-const Order = sequelize.define("order", {
-  id: {
-    type: Sequelize.INTEGER,
-    autoIncrement: true,
-    allowNull: false,
-    primaryKey: true,
-  },
-  total: {
-    type: Sequelize.INTEGER,
-    allowNull: false,
-  },
-});
+// const Order = sequelize.define("order", {
+//   id: {
+//     type: Sequelize.INTEGER,
+//     autoIncrement: true,
+//     allowNull: false,
+//     primaryKey: true,
+//   },
+//   total: {
+//     type: Sequelize.INTEGER,
+//     allowNull: false,
+//   },
+// });
 
-module.exports =  Order;
+// module.exports =  Order;
