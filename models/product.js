@@ -2,7 +2,7 @@ const Sequelize = require("sequelize");
 const sequelize = require("../util/bdd");
 
 
-const Product = sequelize.define("Product", {
+const Product = sequelize.define("product", {
     id: {
       type: Sequelize.INTEGER,
       autoIncrement: true,
@@ -42,6 +42,6 @@ const Product = sequelize.define("Product", {
       allowNull: false,
     }
 
-  });
+  }, {freezeTableName: true});
   
   module.exports = Product;
