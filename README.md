@@ -1,7 +1,13 @@
-# trivialback 
+## Trivialback [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
 
-## 7 day project, fullstack web app, based on the open food fact API and hosted on kubernetes. 
+# Stack
 
 - Sequelize ORM 
+- Node.js
+- Express
+- Axios
+- Docker
+
+
 
 
