@@ -1,34 +1,18 @@
-import Product from "../models/Product.js";
-import axios from 'axios'
-class searchProduct {
-    
-    searchProduct = async(request, response)  =>
-    {
-        const {productId} = request.body
-      // Regarder dans la db si le produit est deja enregistré
-    let product 
-    try{
-        product = await Product.findOne({id : productId})
-    }
-    catch(error){
-        throw(error)
-    }
-    if(product) {
-        return response.json(product)
+const axios = require('axios');
+const baseUrl = "https://world.openfoodfacts.org/api/v2"
+async function makeRequest(productCode) {
+
+    const config = {
+        method: 'get',
+        url: `${baseUrl}/product/${productCode}`
     }
 
-    const apiProduct = axios.get('https://world.openfoodfacts.org?json=true', )
-
-    const createProduct = await Product.create({name : apiProduct.name})
-
-    return response.json(apiProduct)
-
-    }
-
-
-    
+    const res = await axios(config)
+    // Tu recois un objet ou t'as toutes les données relative au code du produit que t'as mis dans makeRequest("04963406");
+    console.log(res.data);
 }
 
+makeRequest("04963406");
 
 
-export default searchProduct
+export default makeRequest;
